@@ -1,0 +1,35 @@
+version: 2
+updates:
+# Fetch and update latest `npm` packages (backend)
+- package-ecosystem: npm
+  directory: '/'
+  schedule:
+    interval: daily
+    time: '07:00'
+  open-pull-requests-limit: 20
+  reviewers:
+    - tzjin88
+  assignees:
+    - tzjin88
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+  target-branch: "main"
+
+# Frontend
+- package-ecosystem: npm
+  directory: '/frontend'
+  schedule:
+    interval: daily
+    time: '07:00'
+  open-pull-requests-limit: 20
+  reviewers:
+    - tzjin88
+  assignees:
+    - tzjin88
+  commit-message:
+    prefix: fix
+    prefix-development: chore
+    include: scope
+  target-branch: "main"

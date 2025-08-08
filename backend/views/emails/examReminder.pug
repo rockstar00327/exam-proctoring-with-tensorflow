@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p Hello #{firstName},
+  p This is a reminder for your upcoming exam:
+  .exam-details
+    h3 Exam Details
+    p 
+      strong Exam: 
+      | #{examName}
+    p 
+      strong Date & Time: 
+      | #{examDate}
+  p Please ensure you have a stable internet connection and all required materials ready before the exam starts.
+  p Good luck!
+  p Best regards,
+  p The AI Proctoring Team

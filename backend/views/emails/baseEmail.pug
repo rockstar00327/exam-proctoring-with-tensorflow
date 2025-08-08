@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title= subject
+    style
+      include ../../public/css/email.css
+  body
+    .email-container
+      header.header
+        h1 AI Proctoring System
+      
+      .content
+        block content
+          p Hello #{firstName},
+          p This is a default email template.
+      
+      footer.footer
+        p &copy; #{new Date().getFullYear()} AI Proctoring System. All rights reserved.

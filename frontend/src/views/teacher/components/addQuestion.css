@@ -1,0 +1,18 @@
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  min-height: 200px;
+}
+.quill-dark svg {
+  fill: red !important;
+  color: #FFFFFF;
+  size: 20px;
+  background-color: #FFFFFF;
+}
+
+.quill-dark .ql-picker-label,
+.quill-dark .ql-picker-label::before {
+  color: #FFFFFF;
+}
+
+.quill-dark .ql-container.ql-snow .ql-editor::before {
+  color: #FFFFFF;
+}

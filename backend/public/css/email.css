@@ -1,0 +1,80 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.email-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  background-color: #4a6fa5;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Content */
+.content {
+  padding: 30px;
+}
+
+.content p {
+  margin: 0 0 20px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4a6fa5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.btn:hover {
+  background-color: #3a5a80;
+}
+
+/* Footer */
+.footer {
+  background-color: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .email-container {
+    width: 100% !important;
+  }
+  
+  .content {
+    padding: 20px !important;
+  }
+  
+  .header h1 {
+    font-size: 20px !important;
+  }
+}

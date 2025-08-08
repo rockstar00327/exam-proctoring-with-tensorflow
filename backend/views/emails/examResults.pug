@@ -1,0 +1,22 @@
+extends baseEmail
+
+block content
+  p Hello #{firstName},
+  p Your exam results are now available:
+  .results-summary
+    h3 Exam Results
+    p 
+      strong Exam: 
+      | #{examName}
+    p 
+      strong Score: 
+      | #{score} out of #{maxScore} (#{percentage}%)
+  
+  if percentage >= 70
+    p Congratulations on passing the exam!
+  else
+    p Thank you for taking the exam. We encourage you to review the material and try again.
+  
+  p If you have any questions about your results, please contact your instructor.
+  p Best regards,
+  p The AI Proctoring Team
