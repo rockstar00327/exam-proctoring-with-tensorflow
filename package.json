@@ -19,7 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@clerk/clerk-react": "^5.35.3",
-    "@clerk/clerk-sdk-node": "^4.13.23",
+    "@clerk/clerk-sdk-node": "^5.1.6",
     "axios": "^1.11.0",
     "bcryptjs": "^3.0.2",
     "cookie-parser": "^1.4.6",
